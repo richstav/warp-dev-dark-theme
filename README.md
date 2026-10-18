@@ -34,9 +34,21 @@ editors/zed/          Zed extension + theme JSON
 editors/vscode/       VS Code color theme (Cursor, Antigravity, VSCodium, Code)
 src/                  palette tokens
 extras/               neovim, emacs, terminal emulators (not installed by default)
+  - conemu/           Warp-inspired ConEmu config (standalone XML + generator)
 install.sh            detect-and-install
 AGENTS.md             steps for coding agents
 ```
+
+## Terminals (extras, standalone)
+
+- **ConEmu**: `extras/terminals/conemu/Warp-Dark-ConEmu-Warp-Reference.xml`
+  - Canvas `#050505`, JetBrainsMono NF 14 (crisp, non-grainy), 16px pad, opaque, hidden tabs/status.
+  - Palette: canonical pastel + lavender ANSI 36, truecolor accent.
+  - Cursor: block (ConEmu limit: no per-color cursor).
+  - Load: `ConEmu64.exe -NoSingle -LoadCfgFile "path\to\Warp-Dark-ConEmu-Warp-Reference.xml"`
+  - Generator: `New-WarpReferenceConfig.ps1` (from source Zed-aligned base).
+  - Verified: pixel #050505 + all swatches.
+  - Limits: no Warp layout/blocks/sidebar/input chrome (app UI, not themeable).
 
 ## Palette
 
