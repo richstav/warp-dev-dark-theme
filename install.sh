@@ -5,7 +5,8 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 THEME_NAME="Warp Dark"
-VSX_ID="richstav.warp-dark-0.1.0"
+VSX_VERSION="$(python3 -c 'import json, sys; print(json.load(open(sys.argv[1]))["version"])' "$ROOT/editors/vscode/package.json")"
+VSX_ID="richstav.warp-dark-$VSX_VERSION"
 HOME="${HOME:?}"
 
 log() { printf '%s\n' "$*"; }
