@@ -1,0 +1,32 @@
+{
+	"name": "warp-dark",
+	"displayName": "Warp Dark",
+	"description": "Warp Dark for VS Code, Cursor and Antigravity: official terminal palette and complete workbench styling.",
+	"version": "0.2.0",
+	"publisher": "richstav",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/richstav/warp-dev-dark-theme.git"
+	},
+	"engines": {
+		"vscode": "^1.80.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Warp Dark",
+				"uiTheme": "vs-dark",
+				"path": "./warp-dark-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"installedTimestamp": 1789169059394,
+		"targetPlatform": "undefined",
+		"size": 15197
+	}
+}
